@@ -22,7 +22,7 @@ const getPrimes = (range) =>{
 		return [range];
 	}
 	else if (range === 3) {
-		return [range];
+		return primes;
 	}
 	else if(range <= 0) {
 		return "Negative numbers cannot be a prime";
