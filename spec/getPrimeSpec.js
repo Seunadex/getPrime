@@ -11,7 +11,7 @@ describe("testing for proper functionality", function(){
 			expect(getPrimes.getPrimes(23)).toEqual([ 2, 3, 5, 7, 11, 13, 17, 19, 23 ]);
 		});
 
-		it("should return [ 2, 3, 5, 7, 11, 13 ] for primes numbers between o and 15", function(){
+		it("should return [ 2, 3, 5, 7, 11, 13 ] for primes numbers between 0 and 15", function(){
 			expect(getPrimes.getPrimes(15)).toEqual([ 2, 3, 5, 7, 11, 13 ]);
 		});
 

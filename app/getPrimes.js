@@ -1,11 +1,11 @@
 'use strict'
-const getPrimes = (range) => {
+const getPrimes = (range) =>{
 	let primes = [2, 3];
-	const checkPrime = (range) => {
+	 const checkPrime = (range) =>{
 		let rangeIsPrime;
 		let counter;
 		for(counter = 2; counter < range; counter++) {
-			if(rangeIsPrime % counter === 0) {
+			if(range % counter === 0) {
 				rangeIsPrime = false;
 				break;
 			}
@@ -28,10 +28,10 @@ const getPrimes = (range) => {
 		return "Negative numbers cannot be a prime";
 	}
 	else {
-		let i;
-		for(i = 4; i<= range; i++) {
-			if(checkPrime(i) === true) {
-				primes.push(i);
+		let counter;
+		for(counter = 4; counter<= range; counter++) {
+			if(checkPrime(counter) === true) {
+				primes.push(counter);
 			}
 		}
 		return primes;
