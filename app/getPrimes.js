@@ -18,6 +18,9 @@ const getPrimes = (range) =>{
 	if (range === 1) {
 		return "1 is not a prime number";
 	}
+	else if (typeof(range) != 'number') {
+		return "Invalid input"
+	}
 	else if (range === 2) {
 		return [range];
 	}

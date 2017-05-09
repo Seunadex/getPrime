@@ -39,6 +39,9 @@ describe("testing for proper functionality", function(){
 	})
 
 	describe("case for invalid input", function(){
+		it("should return 'Invalid input' for non-interger values", function(){
+			expect(getPrimes.getPrimes('seun')).toEqual("Invalid input");
+		})
 		it("should return 'Negative numbers cannot be a prime' for numbers less or equal to zero", function(){
 			expect(getPrimes.getPrimes(-4)).toEqual("Negative numbers cannot be a prime");
 		});
